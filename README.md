@@ -80,7 +80,7 @@ In order to run this project you need:
 
 
 - [Ruby](https://www.ruby-lang.org/en/) installed and running. To get more information, read the [installation instructions](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md).
-- [RAILS](https://guides.rubyonrails.org/v5.1/getting_started.html)
+- [RAILS](https://guides.rubyonrails.org/v5.1/getting_started.html) installed and running. To get more information, read the [installation instructions] (https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/lessons/Rails_guides_lesson.md).
 
 ### Setup
 
