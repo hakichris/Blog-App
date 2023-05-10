@@ -32,7 +32,7 @@
 # 📖 [Blog] <a name="about-project"></a>
 
 
-**[OOP: SchooL library]** A fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts
+**[Blog]** A fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -137,7 +137,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hakichris/OOP-School-Library/issues).
+Feel free to check the [issues page](https://github.com/hakichris/Blog-App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
