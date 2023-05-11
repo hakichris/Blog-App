@@ -1,4 +1,4 @@
-## Copyright 2023, [Christian Hakizimana]xs
+## Copyright 2023, [Christian Hakizimana]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this [BLOG APP]and associated documentation files, to deal in the [web application] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [BLOG APP], and to permit persons to whom the [BLOG APP] is furnished to do so, subject to the following conditions:
 
