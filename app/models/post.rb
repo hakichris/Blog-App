@@ -16,6 +16,4 @@ class Post < ApplicationRecord
   def recentfivecomments
     comments.order(created_at: :desc).limit(5)
   end
-
-  private :updatepostscounter
 end
