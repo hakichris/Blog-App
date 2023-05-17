@@ -17,6 +17,7 @@
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -28,20 +29,21 @@ ul {
 }
 
 .photo {
-    width: 10vw;
-    height: 10.5vw;
+    width: 9vw;
+    height: 12vh;
 }
 
 .name_post {
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 20vh;
+    height: fit-content;
     list-style-type: none;
-    margin-bottom: 10px;
+    /* margin-top: 0;
+    margin-bottom: 10px; */
     padding: 5px 5px 5px 5px;
     border: 5px solid ; 
-    gap: 5vh;
+    /* gap: 5vh; */
 }
 
  .list_name{
