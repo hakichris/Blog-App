@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    border: 5px solid ; 
+}
+
+.photo {
+    width: 10vw;
+    height: 10.5vw;
+}
+
+.name_post {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 20vh;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    border: 5px solid ; 
+    gap: 5vh;
+}
+
+ .list_name{
+    font-size: 30px;
+    padding-top: 3%;
+    padding-left: 10%;
+ }
+ .list_countpost {  
+    padding-left: 80%;
+ }
