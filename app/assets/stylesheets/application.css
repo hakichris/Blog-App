@@ -15,42 +15,65 @@
  */
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 ul {
-    list-style-type: none;
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 5px;
-    border: 5px solid ; 
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  border: 5px solid;
 }
 
 .photo {
-    width: 9vw;
-    height: 12vh;
+  width: 9vw;
+  height: 12vh;
 }
 
 .name_post {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    height: fit-content;
-    list-style-type: none;
-    /* margin-top: 0;
-    margin-bottom: 10px; */
-    padding: 5px 5px 5px 5px;
-    border: 5px solid ; 
-    /* gap: 5vh; */
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
 }
 
- .list_name{
-    font-size: 30px;
-    padding-top: 3%;
-    padding-left: 10%;
- }
- .list_countpost {  
-    padding-left: 80%;
- }
+.list_name {
+  font-size: 30px;
+  padding-top: 3%;
+  padding-left: 10%;
+}
+
+.list_countpost,
+.list_countcomentlikes {
+  padding-left: 75%;
+}
+
+.title {
+  margin: 0;
+}
+
+.width {
+  width: 51vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.allcoment,
+.all-posts {
+  border: 5px solid;
+  margin-left: 20%;
+}
