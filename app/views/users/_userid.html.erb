@@ -1,11 +1,10 @@
 <div class="container">
-
+<div class="user_profile">
 <div class="photos">
     <ul class="photo"> 
    <li> <img src="<%= @user.photo %>"> </li>
    </ul>
 </div>
-
 <div class="names_posts">
     <ul class="name_post"> 
    <li class="list_name"> <%= @user.name %> </li>
@@ -13,3 +12,19 @@
    </ul>
 </div>
 </div>
+<div class="bio">
+    <ul class="bio_info width"> 
+    <h3 class="title">Bio</h3>
+   <li class="bio_content"> <%= @user.bio %> </li>
+   </ul>
+</div>
+<div class="post">
+    <ul class="post_info width"> 
+    <h3 class="title"><%= @post.title%> #<%= @post.id%></h3>
+   <li class="bio_content"> <%= @post.text %> </li>
+   <li class="list_countcomentlikes">Comments: <%= @post.commentscounter %>, Likes: <%= @post.likescounter %> </li>
+   </ul>
+</div>
+<button class="allcoment"> See all posts</button>
+</div>
+
