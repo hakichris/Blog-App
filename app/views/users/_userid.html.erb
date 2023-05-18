@@ -25,6 +25,6 @@
    <li class="list_countcomentlikes">Comments: <%= @post.commentscounter %>, Likes: <%= @post.likescounter %> </li>
    </ul>
 </div>
-<button class="allcoment"> See all posts</button>
+<button class="allcoment"> <%= link_to 'See all Post', user_posts_path(@user) %> </button>
 </div>
 
