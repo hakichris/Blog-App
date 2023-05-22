@@ -95,7 +95,7 @@ input[type=text], textarea {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: none;
+  border: 1px solid blue;
   border-radius: 4px;
 }
 
