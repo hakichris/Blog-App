@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
+
+  
   describe 'GET /users/id/posts/index' do
     it 'check if it brings success response' do
       get user_posts_path(:user_id)
