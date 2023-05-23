@@ -15,7 +15,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get user_posts_path(:user_id)
-      expect(response.body).to include('<h1>Here your posts list with user_id </h1>')
+      expect(response.body).to include('<h3> List of previous Posts and respective comments:</h3>')
     end
   end
 
@@ -30,7 +30,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include('<h1>Here your post with post_id and user_id</h1>')
+      expect(response.body).to include('<div class="post_comment">')
     end
 
     it 'renders the show template' do

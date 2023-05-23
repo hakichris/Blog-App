@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
   def index
     @user = User.find_by_id(params[:user_id])
-    @post = Post.all
+    @posts = @user.posts.includes(:comments)
   end
 
   def new
-    @post = Post.new
+    @post = @current_user.Post.new
   end
 
   def create

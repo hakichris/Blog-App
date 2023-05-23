@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get users_path
-      expect(response.body).to include('Here your users list')
+      expect(response.body).to include('<ul class="name_post">')
     end
   end
 
@@ -28,7 +28,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get "/users/#{user.id}"
-      expect(response.body).to include('<h1>Here your user with id</h1>')
+      expect(response.body).to include('<div class="names_posts">')
     end
 
     it 'renders the show template' do

@@ -18,7 +18,7 @@
       <% end %>
     </div>
    <div class="post_comment">
-   <% @post.comments.each do |comment| %>
+   <% @post.comments.includes(:author).each do |comment| %>
       <ul class="comments width"> 
           <li> <%= comment.author.name %>: <%= comment.text%> </li>
        </ul>
