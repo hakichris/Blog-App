@@ -1,12 +1,23 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-
+  user = User.new(name: 'Something',
+                  photo: 'http://localhost:3000/something.jpg',
+                  bio: 'Something test',
+                  postscounter: 0)
+  user.save
+  post = Post.new(
+    title: 'Something',
+    text: 'Something test',
+    author: user,
+    commentscounter: 0,
+    likescounter: 0
+  )
+  post.save
   
   describe 'GET /users/id/posts/index' do
     it 'check if it brings success response' do
       get user_posts_path(:user_id)
-
       expect(response).to be_successful
     end
 
