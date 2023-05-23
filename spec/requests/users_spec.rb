@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get users_path
-      expect(response.body).to include( '<li> <img src="https://picsum.photos/200/300"> </li>')
+      expect(response.body).to include('<li> <img src="https://picsum.photos/200/300"> </li>')
     end
   end
 
