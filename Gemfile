@@ -29,6 +29,8 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'devise'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -55,10 +57,14 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
 
-group :development do
+group :development, :test do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'capybara'
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'web-console'
+  gem 'webdrivers'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -66,11 +72,10 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
-end
-gem 'rails-controller-testing'
+# group do
+#   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+#   gem 'capybara'
+#   gem 'selenium-webdriver'
+#  gem 'rails-controller-testing'
+#   gem 'webdrivers'
+# end
