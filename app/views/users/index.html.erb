@@ -13,7 +13,7 @@
   <% @users.each do |user| %>
     <ul class="name_post"> 
    <li class="list_name"> <%= link_to user.name, user_path(user) %> </li>
-   <li class="list_countpost">Number of post: <%= user.postscounter %> </li>
+   <li class="list_countpost">Number of posts: <%= user.postscounter %> </li>
    </ul>
     <% end %>
 </div>
