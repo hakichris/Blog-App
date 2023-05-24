@@ -14,12 +14,12 @@ RSpec.describe 'Users', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get users_path
-      expect(response.body).to include('Here your users list')
+      expect(response.body).to include('<li> <img src="https://picsum.photos/200/300"> </li>')
     end
   end
 
   describe 'GET users from /users/:id to show' do
-    user = User.create!(name: 'Chris', photo: 'https://picsum.photos/200/300', bio: 'I am chris', postscounter: 4)
+    user = User.create!(name: 'chris', photo: 'https://picsum.photos/200/300', bio: 'I am John', postscounter: 4)
 
     it 'check if it brings success response' do
       get "/users/#{user.id}"
@@ -28,7 +28,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'check the response body includes correct placeholder text' do
       get "/users/#{user.id}"
-      expect(response.body).to include('<h1>Here your user with id</h1>')
+      expect(response.body).to include(' <ul class="bio_info width"> ')
     end
 
     it 'renders the show template' do

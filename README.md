@@ -114,6 +114,12 @@ To run the project, execute the following command:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/hakichris)
 
+👤 **Juhar Yimer**
+
+- GitHub: [@juharyimam](https://github.com/juaryimami)
+- Twitter: [@juhar77766](https://twitter.com/juhar77766)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/juhar-yimer)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
