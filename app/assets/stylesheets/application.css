@@ -99,14 +99,10 @@ label {
   margin: 5px 0 5px 0;
 }
 
-input[type=text],  
+input[type=text],
 input[type=email],
 input[type=password],
-textarea,
-text_area,
-email_field,
-password_field
- {
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

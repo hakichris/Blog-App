@@ -17,6 +17,7 @@ class User < ApplicationRecord
   def assignpostscounter
     self.postscounter = posts.count
   end
+
   def recentthreeposts
     posts.order(created_at: :desc).limit(3)
   end
