@@ -31,7 +31,7 @@
 # 📖 [Blog] <a name="about-project"></a>
 
 
-**[Blog]** A fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts
+**[Blog]** A fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts and demo for rails application.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,8 +53,11 @@
 
 
 - posts.
+- add users.
+- login
 - Add comments.
 - add likes.
+- lists posts per user
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
