@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def index
     @user = User.find(params[:user_id])
     @posts = Post.includes(comments: [:author])
@@ -20,6 +21,18 @@ class PostsController < ApplicationController
     else
       render :new, notice: 'Post could not be created.'
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    authorize! :destroy, @post
+
+    if @post.destroy
+      flash[:success] = 'Post deleted successfully.'
+    else
+      flash[:danger] = 'Post could not be deleted.'
+    end
+    redirect_to user_posts_path(current_user)
   end
 
   def show

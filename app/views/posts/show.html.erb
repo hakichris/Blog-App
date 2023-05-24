@@ -17,14 +17,31 @@
         <%= form.submit 'Like Post' %>
       <% end %>
     </div>
+    <% if can?(:destroy, @post)%>
+          <%= link_to user_post_path(@user, @post), data: {
+            turbo_method: :delete
+          } do %>
+            <button><%= t('.delete post') %></button>
+            <% end %>
+        <% end %>
    <div class="post_comment">
    <% @post.comments.includes(:author).each do |comment| %>
       <ul class="comments width"> 
           <li> <%= comment.author.name %>: <%= comment.text%> </li>
        </ul>
-
     <% end %>
    </div>
+  
+  <div class="destroycomment"> 
+  <% if can?(:destroy, comment)%>
+   <%= link_to user_post_comment_path(@user, comment.post, comment.id), data: {
+     turbo_method: :delete
+   } do %>
+     <button><%= t('.Delete Comment') %></button>
+     <% end %>
+     <% end %>
+<% end %>
+
 </div>
 
 
