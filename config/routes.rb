@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :models
   root 'users#index'
 
   resources :users, only: %i[index show] do
