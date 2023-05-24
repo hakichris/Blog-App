@@ -90,7 +90,16 @@ label {
   margin-bottom: 10px;
 }
 
-input[type=text],
+.allfield {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid black;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0 5px 0;
+}
+
+input[type=text],  
 textarea {
   width: 100%;
   padding: 12px 20px;
