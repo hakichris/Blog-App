@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def new
     @posts = Post.find(params[:post_id])
     @user = User.find(params[:user_id])
