@@ -3,11 +3,11 @@ class CommentsController < ApplicationController
     @posts = Post.find(params[:post_id])
     @user = User.find(params[:user_id])
     @comments = Comment.find(params[:comment_id])
-   
+
     respond_to do |format|
       format.html
-      format.json {render json:@comments}   
-    end 
+      format.json { render json: @comments }
+    end
   end
 
   def create
@@ -21,8 +21,11 @@ class CommentsController < ApplicationController
         format.json { render json: @comment, status: :created }
       end
 
-    else 
-      render :create
+    else
+      respond_to do |format|
+        format.html { render :new, alert: 'Comment not created!' }
+        format.json { render json: @comment.errors, status: :unprocessable_entry }
+      end
     end
   end
 
