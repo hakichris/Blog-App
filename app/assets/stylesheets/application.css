@@ -90,7 +90,8 @@ label {
   margin-bottom: 10px;
 }
 
-.allfield {
+.allfield,
+button {
   display: flex;
   align-items: center;
   flex-direction: column;
