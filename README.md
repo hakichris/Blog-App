@@ -58,6 +58,7 @@
 - Add comments.
 - add likes.
 - lists posts per user
+- Authorization added
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +85,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-https://github.com/hakichris/Blog-App.git
+- git clone https://github.com/hakichris/Blog-App.git
 
 ### Install
 
