@@ -59,6 +59,7 @@
 - add likes.
 - lists posts per user
 - Authorization added
+- Api endpoint added
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
